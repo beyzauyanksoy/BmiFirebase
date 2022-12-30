@@ -1,7 +1,7 @@
-
 import 'package:get/get.dart';
 
-class UserDetailInformationController extends GetxController {
+import 'login_controller.dart';
 
+class UserDetailInformationController extends GetxController {
+  LoginController loginController = Get.find();
 }
-  
