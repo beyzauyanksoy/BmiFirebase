@@ -1,6 +1,8 @@
 import 'package:bmi_firebase/app/bindings/account_binding.dart';
 import 'package:bmi_firebase/app/bindings/user_detail_information_binding.dart';
+import 'package:bmi_firebase/app/bindings/userdataentry_binding.dart';
 import 'package:bmi_firebase/app/ui/pages/account_page/account_page.dart';
+import 'package:bmi_firebase/app/ui/pages/userdataentry_page/userdataentry_page.dart';
 import 'package:get/get.dart';
 
 import '../bindings/login_binding.dart';
@@ -34,6 +36,11 @@ class AppPages {
       name: Routes.USERDETAIL,
       page: () => UserDetailInformationPage(),
       binding: UserDetailInformationBinding(),
+    ),
+    GetPage(
+      name: Routes.DATAENTRY,
+      page: () => UserdataentryPage(),
+      binding: UserdataentryBinding(),
     ),
   ];
 }

@@ -5,6 +5,8 @@ import '../../../controllers/login_controller.dart';
 import '../account_page/account_page.dart';
 
 class LoginPage extends GetView<LoginController> {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
