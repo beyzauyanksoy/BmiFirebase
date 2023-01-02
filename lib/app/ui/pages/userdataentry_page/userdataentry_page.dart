@@ -59,11 +59,15 @@ class UserdataentryPage extends GetView<UserdataentryController> {
                         onTap: () {
                           print(controller.kilo.text);
                           print(controller.weight.text);
-                          controller.db.yaziEkle(controller.kilo.text,
-                              controller.weight.text, controller.bmiHesapla());
+                          controller.db.yaziEkle(
+                              controller.kilo.text,
+                              controller.weight.text,
+                              controller.bmiHesapla(),
+                              controller.sonuc(controller.bmiHesapla()));
 
                           controller.bmiHesapla();
                           print(controller.bmiHesapla());
+                          print(controller.sonuc(controller.bmiHesapla()));
                         },
                         child: Builder(builder: (context) {
                           return Container(
