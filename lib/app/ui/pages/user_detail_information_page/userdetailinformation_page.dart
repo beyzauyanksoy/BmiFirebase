@@ -3,9 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../controllers/user_detail_information_controller.dart';
-import '../../../controllers/userdataentry_controller.dart';
+
 import '../../../routes/app_pages.dart';
-import '../../../shared/service/firestore_service.dart';
+
 
 class UserDetailInformationPage
     extends GetView<UserDetailInformationController> {
@@ -49,7 +49,7 @@ class UserDetailInformationPage
                     stream: controller.db.getData(),
                     builder: (context, snapshot) {
                       return !snapshot.hasData
-                          ? CircularProgressIndicator()
+                          ? const CircularProgressIndicator()
                           : GridView.builder(
                               physics: const NeverScrollableScrollPhysics(),
                               itemCount: snapshot.data!.docs.length,
