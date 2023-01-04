@@ -13,7 +13,7 @@ class LoginPage extends GetView<LoginController> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 260,
               child: Stack(
                 children: [
